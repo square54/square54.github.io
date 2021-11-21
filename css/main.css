@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Titillium+Web:wght@700&display=swap");
+:root {
+  --primary-background-color: #333333;
+  --primary-color: #36cead;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+
+h1 h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 4em;
+}
+
+.logo {
+  font-family: "Pacifico";
+}
+
+header {
+  text-align: center;
+  font-size: 0.75em;
+  color: var(--primary-color);
+  background: var(--primary-background-color);
+  padding: 0em;
+}
+
+header .left-header {
+  padding: 1.5em;
+}
+
+header .left-header a {
+  background-color: black;
+  padding: 0.8em;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+header .left-header a:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+}
+
+header .left-header i {
+  color: white;
+}
+
+header .right-header {
+  display: none;
+}
+
+header .right-header a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3em;
+  font-size: 1.2em;
+}
+
+header .right-header a:hover {
+  color: var(--primary-color);
+}
+
+header .middle-header h1 {
+  margin: 0em;
+  padding: 0.5em;
+}
+
+section {
+  padding-bottom: 1em;
+}
+
+.hero-section {
+  background: var(--primary-background-color);
+  color: white;
+  padding-top: 0.2em;
+  padding-bottom: 8em;
+}
+
+.hero-section .column-container {
+  text-align: center;
+}
+
+.hero-section .column-container span {
+  font-size: 3em;
+  display: block;
+  font-weight: bolder;
+}
+
+.hero-section .left-column {
+  background: #707070;
+  margin: auto;
+  text-shadow: -2px 2px 1px black;
+  border-radius: 0.2em 3em 0.2em 0.2em;
+  -webkit-box-shadow: -5px 5px 50px black;
+          box-shadow: -5px 5px 50px black;
+  width: 20em;
+  background-image: url(../images/Ocean_Beach.jpg);
+  background-size: cover;
+}
+
+.hero-section .left-column .container {
+  border-radius: 0.2em 3em 0.2em 0.2em;
+  -webkit-backdrop-filter: blur(3px) grayscale(100%);
+          backdrop-filter: blur(3px) grayscale(100%);
+  padding: 2em;
+}
+
+.hero-section .right-column {
+  margin: auto;
+  width: 22em;
+  text-align: center;
+}
+
+.hero-section img {
+  width: 4em;
+}
+
+.hero-section h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0.75em;
+}
+
+.hero-section h3 {
+  margin: 2em 0;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.hero-section h4 {
+  font-size: 0.85em;
+}
+
+.hero-section label {
+  display: block;
+  margin: 0.25em;
+  text-align: left;
+}
+
+.hero-section input, .hero-section select {
+  width: 95%;
+  padding: 0.7em;
+}
+
+.hero-section input {
+  border-radius: 0.2em;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 26px -18px #000000;
+          box-shadow: inset 0px 0px 26px -18px #000000;
+}
+
+.hero-section select {
+  border-radius: 0%;
+  border: none;
+  padding: 0.7em 1em;
+}
+
+.hero-section hr {
+  margin-bottom: 2em;
+}
+
+.benefits-section {
+  background: #f1f1f1;
+  padding-bottom: 4em;
+}
+
+.benefits-section li {
+  background: white;
+  padding: 4em 2em;
+  margin: 1em auto;
+  text-align: center;
+  width: 16em;
+}
+
+.benefits-section li img {
+  width: 5em;
+  height: 5em;
+}
+
+.story-section-mobile {
+  background: white;
+  text-align: center;
+}
+
+.story-section-mobile img {
+  width: 15em;
+  height: 16em;
+  border-radius: 29px 221px 95px 104px / 39px 90px 110px 84px;
+}
+
+.story-section-mobile h1, .story-section-mobile p {
+  margin: 2em;
+}
+
+.story-section {
+  display: none;
+  padding-bottom: 4em;
+}
+
+.partners-section {
+  background: var(--primary-color);
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+}
+
+.partners-section .lifebook {
+  font-family: "Kanit";
+}
+
+.partners-section .javastar {
+  font-family: "Titillium Web";
+  letter-spacing: 2px;
+}
+
+.partners-section .instasham {
+  font-family: "Pacifico";
+}
+
+.video-section {
+  text-align: center;
+  margin-bottom: 4em;
+  background: white;
+  margin-bottom: 0;
+  padding-bottom: 4em;
+}
+
+.video-section video {
+  display: inline-block;
+  width: 70%;
+}
+
+.testimonials-section {
+  background-image: url(../images/mountain-range.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.testimonials-section img {
+  width: 5em;
+  height: 5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials-section h1 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.testimonials-section h2 {
+  margin-top: 0.3em;
+  font-size: 0.75em;
+  font-weight: lighter;
+}
+
+.testimonials-section blockquote {
+  padding-bottom: 2em;
+}
+
+.testimonials-section .container {
+  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.features-section {
+  background: white;
+  text-align: center;
+}
+
+.features-section h1 {
+  font-size: 2em;
+}
+
+.features-section ul {
+  list-style-image: url(../images/checkmark.svg);
+  margin: 2em 5em;
+}
+
+.features-section li {
+  text-align: left;
+}
+
+.features-section li h1 {
+  font-size: 1.25em;
+}
+
+.features-section li h2 {
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.final-cta {
+  background: var(--primary-background-color);
+  text-align: center;
+  color: white;
+  padding: 2em 2em 2em 2em;
+}
+
+.final-cta h2 {
+  font-weight: lighter;
+  font-size: 1em;
+  margin-bottom: -1em;
+}
+
+.claim-now-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1.15em;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em 2em;
+  margin-top: 2em;
+}
+
+footer {
+  background: var(--primary-background-color);
+  text-align: center;
+  color: white;
+  padding-bottom: 1.5em;
+}
+
+footer .container {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+footer .container a {
+  background-color: black;
+  padding: 0.8em;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+footer .container a:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+}
+
+footer .container i {
+  color: white;
+}
+
+footer h1 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+footer h2 {
+  font-weight: lighter;
+  font-size: 0.75em;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section .column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-section .column-container .left-column {
+    margin: 2em;
+  }
+  .hero-section .column-container .right-column {
+    margin: 2em;
+  }
+  .benefits-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .benefits-section .container ul li {
+    margin: 1em;
+  }
+  .story-section-mobile {
+    display: none;
+  }
+  .story-section {
+    background: white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .story-section .image-container, .story-section .text-container {
+    padding: 2em;
+  }
+  .story-section .text-container {
+    width: 40%;
+  }
+  .story-section img {
+    margin-top: 2em;
+    width: 20em;
+    height: 24em;
+    border-radius: 29px 221px 95px 104px / 39px 90px 110px 84px;
+  }
+  .story-section h1, .story-section p {
+    text-align: left;
+  }
+  .partners-section ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .video-section video {
+    width: 30em;
+    height: 24em;
+  }
+  .testimonials-section .container {
+    padding-top: 10em;
+    padding-bottom: 8em;
+  }
+  .features-section h1 {
+    font-size: 3em;
+  }
+  .features-section ul {
+    margin: 2em auto;
+    width: 40%;
+  }
+  .features-section ul li {
+    margin: 0 0 3em 2em;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  footer h2 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (min-width: 1175px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .left-header {
+    width: 33%;
+  }
+  header .middle-header {
+    width: 33%;
+  }
+  header .right-header {
+    display: block;
+    width: 33%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
